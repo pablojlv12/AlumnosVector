@@ -23,9 +23,20 @@ public class Aula {
 
 	}
 
+	public void añadirAsig(Asignatura uno, Asignatura dos, Asignatura tres) {
+
+		for (Alumno alumno : aula) {
+
+			alumno.add(uno);
+			alumno.add(dos);
+			alumno.add(tres);
+
+		}
+	}
+
 	@Override
 	public String toString() {
-		return "Aula [aula=" + Arrays.toString(aula) + "]";
+		return "" + Arrays.toString(aula);
 	}
 
 }
